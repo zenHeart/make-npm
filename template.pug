@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        title=htmlWebpackPlugin.options.title
+        meta(
+            charset="utf-8"
+        )
+        meta(
+            name="apple-mobile-web-app-capable"
+            content="yes"
+        )
+        meta(
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        )
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        )
+        link(rel='stylesheet', href='/reveal.js/css/reveal.css')
+        link(rel='stylesheet', href='/reveal.js/css/print/paper.css')
+        script(src='/reveal.js/js/reveal.js')
+    body
+        div.reveal
+            //- 添加新的章节,详细配置参见 https://www.npmjs.com/package/reveal.js#markdown
+            each section in htmlWebpackPlugin.options.sections
+                div.slides
+                    section(
+                    data-markdown=section
+                    data-separator="^\r?\n---\r?\n$"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^> note:"
+                    data-charset="utf-8")
+    
+
