@@ -1,5 +1,5 @@
 //包含 css 文件
-import 'reveal.js/css/theme/black.css'; // 配置 PPT 主题,只需替换 css 文件名即可,详见 https://www.npmjs.com/package/reveal.js#theming
+import 'reveal.js/css/theme/moon.css'; // 配置 PPT 主题,只需替换 css 文件名即可,详见 https://www.npmjs.com/package/reveal.js#theming
 import 'reveal.js/lib/css/monokai.css'; // 配置 highlight 风格,详见 https://www.npmjs.com/package/reveal.js#code-syntax-highlighting
 
 Reveal.initialize (

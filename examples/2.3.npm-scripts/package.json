@@ -1,0 +1,26 @@
+{
+  "name": "2.2npm-ignore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "say": "demo",
+    "name": "demo"
+  },
+  "scripts": {
+    "hi": "env;echo hi",
+    "ls": "ls",
+    "prerestart": "echo 预启动配置",
+    "prestop": "echo prestop",
+    "stop": "echo stop",
+    "poststop": "echo poststop",
+    "restart": "echo restart",
+    "prestart": "echo prestart",
+    "start": "echo start",
+    "poststart": "echo poststart",
+    "postrestart": "echo postrestart"
+  },
+  "keywords": [],
+  "author": "zenheart <zenheart_register@163.com>",
+  "license": "ISC"
+}

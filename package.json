@@ -26,5 +26,9 @@
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1",
     "webpack-dev-server": "3.3.1"
+  },
+  "dependencies": {
+    "package1": "file:examples/2.1npm-install/package1",
+    "verdaccio": "4.0.0"
   }
 }
