@@ -4,8 +4,8 @@
   "description": "本地搭建一个 npm registry",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "registry": "verdaccio"
+    "registry": "verdaccio",
+    "registry:reset":"rm -rf $HOME/.local/share/verdaccio/storage"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",

@@ -1,12 +1,12 @@
 {
-  "name": "hello-world",
-  "version": "1.0.1",
+  "name": "hello-world-chengle297",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "chengle297 <register@zenheart.site>",
+  "author": "chengle297 <chengle297@pingan.com.cn>",
   "license": "ISC"
 }
