@@ -1,0 +1,13 @@
+{
+  "name": "2.1.npm-config",
+  "version": "1.0.0",
+  "description": "该示例说明 npm 的配置级别及配置优先级",
+  "main": "index.js",
+  "scripts": {
+    "config:show": "npm c ls -l",
+    "config:level":"npm c --baz=foo --foo=overwrite ls -l"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
