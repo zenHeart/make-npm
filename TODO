@@ -1,3 +1,4 @@
 ☐ 添加 initializer 示例 `https://docs.npmjs.com/cli/init.html`
 ☐ `npm token list` 出错,需查明原因
 ☐ 查看 <https://blog.npmjs.org/>
+☐ 测试 npmrc 数组配置环境变量无法读取!!!
