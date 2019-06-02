@@ -1,0 +1,17 @@
+{
+  "name": "4.1.npm-module",
+  "version": "1.0.0",
+  "description": "require 会自动逐级向上查找模块名。",
+  "main": "index.js",
+  "dependencies": {
+    "mod2": "1.0.0",
+    "mod1": "1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "zenheart <zenheart_register@163.com>",
+  "license": "ISC"
+}
