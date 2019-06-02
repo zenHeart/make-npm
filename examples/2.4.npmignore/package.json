@@ -3,14 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "files":[
-	  "server.js",
-	  "demo.js"
-  ],
   "author": "zenheart <zenheart_register@163.com>",
   "license": "ISC",
   "dependencies": {
