@@ -1,14 +1,16 @@
 {
-  "name": "2.2.npm-lock",
-  "version": "1.0.0",
+  "name": "npm-lock",
+  "version": "1.0.5",
   "description": "该示例说明如下问题: 1. package-lock.json 的作用 2. 和 pm-shrinkwrap 的区别",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-	"start": "node index.js",
-	"clean":"rm -rf node_modules package-lock.json npm-shrinkwrap.json"
+    "start": "node index.js",
+    "clean": "rm -rf node_modules package-lock.json npm-shrinkwrap.json"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "hello-world": "^1.0.0"
+  }
 }

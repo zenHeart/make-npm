@@ -5,10 +5,13 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-	"start": "node index.js",
-	"clean":"rm -rf node_modules package-lock.json"
+    "start": "node index.js",
+    "clean": "rm -rf node_modules package-lock.json"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "npm-lock": "^1.0.0"
+  }
 }

@@ -1,3 +1,3 @@
-const helloWorld = require('hello-world')
+const npmLock = require('npm-lock')
 
-helloWorld.hello();
+npmLock.lock();
