@@ -1,0 +1,18 @@
+{
+  "name": "bundle-demo",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "npm pack --dry-run"
+  },
+  "bundleDependencies": [
+    "package1"
+  ],
+  "keywords": [],
+  "author": "chengle297 <register@zenheart.site>",
+  "publishConfig": {
+	  "registry":"http://localhost:4873"
+  },
+  "license": "ISC"
+}
