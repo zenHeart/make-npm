@@ -3,3 +3,5 @@
 ☐ 查看 <https://blog.npmjs.org/>
 ☐ 测试 npmrc 数组配置环境变量无法读取!!!
 ☐ 补充 scope 包发布的讲解
+☐ 在所有例子中添加 `private` 和 `publishConfig` 避免错误提交到 npm
+☐ 在所有例子中添加 `private` 和 `publishConfig` 避免错误提交到 npm

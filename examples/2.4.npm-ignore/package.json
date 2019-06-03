@@ -8,5 +8,8 @@
   "license": "ISC",
   "dependencies": {
     "hello": "0.3.2"
+  },
+  "scripts":{
+	  "pack":"npm pack --dry-run"
   }
 }
