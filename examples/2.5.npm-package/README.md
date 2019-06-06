@@ -1,14 +1,13 @@
 # package.json
 详细讲解 package.json 的各种配置项
-参考 `https://docs.npmjs.com/files/package.json.html`
+参考 [package-json](https://docs.npmjs.com/files/package.json.html)
 
 ## 所有字段列表
-* `name` 包名,作为 require 的模块 id 名
-  * 简短,具有描述性,命名无需添加 js 和 node 后缀
+* `name` 包名,作为 require 的模块 id
+  * 命名尽量简短,具有描述性,关联包采用 scope 或 monorepo 的方式
 * `version` 包的版本说明
   * 详见 [语义化版本规范](https://semver.org/lang/zh-CN/)
   * 版本控制 [npm 版本控制](https://docs.npmjs.com/misc/semver.html)
-* `description` 描述包的概念,便于 `npm search` 查找
 * `description` 描述包的概念,便于 `npm search` 查找
 * `keywords` 包的关键字,便于 `npm search` 查找
 * `homepage` 项目主站,`npm home` 会打开次配置

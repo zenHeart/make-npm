@@ -1,0 +1,45 @@
+{
+  "name": "2.2npm-ignore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "say": "demo",
+    "name": "demo"
+  },
+  "scripts": {
+    "prepublish": "echo prepublish",
+    "prepare": "echo prepare",
+    "prepublishOnly": "echo prepublishOnly",
+    "prepack": "echo prepack",
+    "postpack": "echo postpack",
+    "publis": "echo publis",
+	"postpublish": "echo postpublish",
+
+	"preinstall": "echo hooks preinstall",
+    "install": "echo hooks install",
+    "postinstall": "echo hooks postinstall",
+	
+	"prestart": "./scripts/prestart.js",
+    "start": "echo start",
+    "poststart": "echo poststart",
+	
+	"prestop": "echo prestop",
+    "stop": "echo stop",
+    "poststop": "echo poststop",
+	
+	"prerestart": "echo hooks preinstall",
+    "restart": "echo restart",
+    "postrestart": "echo postrestart",
+	
+	"precustom": "echo preCustom",
+    "custom": "echo custom",
+    "postcustom": "echo postcustom"
+  },
+  "keywords": [],
+  "author": "zenheart <zenheart_register@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ha": "0.0.17"
+  }
+}

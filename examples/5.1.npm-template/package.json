@@ -1,0 +1,48 @@
+{
+  "name": "确保名字简单具有描述性",
+  "version": "符合语义化版本规范",
+  "author  ": "作者 <邮箱> (主站)",
+  "description": "简要描述项目架构,利用 npm search",
+  "keywords": "关键字利于 npm search",
+  "homepage": "npm home 可打开此地址",
+  "bugs": {
+    "url": "npm bugs 可打开此地址",
+    "email": "bugs 邮箱"
+  },
+  "license": "开源项目必须包含",
+  "files":["npm publish 包含的文件清单"],
+  "main": "模块入口文件",
+  "browser": "浏览器模块入口文件",
+  "bin": "二进制入口文件",
+  "man": "cli man 命令文档",
+  "directories": {
+    "doc": "doc 路径",
+    "example": "范例路径",
+    "test": "测试路径",
+    "lib": "源码路径"
+  },
+  "repository":"仓库地址 npm repo 打开",
+  "scripts": {
+    "test": "充分利用 scripts 钩子"
+  },
+  "config":{
+	"xx":"用户自定义配置"
+  },
+  "dependencies":{
+	  "xx":"所有生产依赖,注意利用 package-lock 文件"
+  },
+  "devDependencies": {
+	  "xx":"所有开发依赖"
+  },
+  "peerDependencies": {
+	  "xx":"开发插件利用此项"
+  },
+  "engines":{
+	  "npm":"npm 的版本限制说明",
+	  "node":"node 限制说明,结合 engine-strict 配置项可以避免应用错误运行"
+  },
+  "os":["说明支持的 os 系统"],
+  "publishConfig": {
+	  "registry":"设置发布的 registry"
+  }
+}

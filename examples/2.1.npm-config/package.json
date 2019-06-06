@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "config:show": "npm c ls -l",
-    "config:level":"npm c --baz=foo --foo=overwrite ls -l"
+	"config:level":"npm c --baz=foo --foo=overwrite ls -l",
+	"config:agent":"echo ${npm_config_user_agent}"
   },
   "keywords": [],
   "author": "",

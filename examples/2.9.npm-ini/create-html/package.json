@@ -1,0 +1,19 @@
+{
+  "name": "create-html",
+  "version": "1.0.1",
+  "description": "html template",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chengle297 <chengle297@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
