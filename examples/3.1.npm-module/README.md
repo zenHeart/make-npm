@@ -67,13 +67,25 @@
 
 ## 调试
 如何调试 node 详见 [node debug](https://nodejs.org/de/docs/guides/debugging-getting-started/)
-
 调试原理基于 [ Chrome DevTools Protocol ](https://chromedevtools.github.io/devtools-protocol/) 
 
+运行如下命令进行调试
 
-> 通过源码调试希望尝试理解如下问题
+```bash
+npm run debug
+```
+
+> 注意你也可以很方便的调试命令行工具
+
+```bash
+# 采用 node inspect `which <命令>`  的方式调试任意命令, which 用来查找命令对应的路径,例如调试 npm
+node inspect `which npm`
+```
+
+
+> 通过源码调试尝试理解如下问题
 
 1. 为什么 module.js `exports.say` 无效,它修改的到底是哪个对象？
 2. 为什么 module1.js 可以工作,尝试比较 `this === exports`？
-3. 为什么 module2.js 会返回空对象,谁创建的？
+3. 为什么 module2.js 会返回空对象,谁创建的？为什么 module2.json 不会加载?
 4. 模块之间循环应用会发生什么？

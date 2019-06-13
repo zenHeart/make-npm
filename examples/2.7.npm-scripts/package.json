@@ -1,45 +1,55 @@
 {
-  "name": "2.2npm-ignore",
-  "version": "1.0.0",
+  "name": "npm-scripts",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "config": {
     "say": "demo",
     "name": "demo"
   },
+  "repository": ".",
+  "//": [
+    "npm 内置了一系列钩子,在特定执行动作下会触发",
+    "你可以利用这些钩子触发特定行为"
+  ],
   "scripts": {
-    "prepublish": "echo prepublish",
-    "prepare": "echo prepare",
-    "prepublishOnly": "echo prepublishOnly",
-    "prepack": "echo prepack",
-    "postpack": "echo postpack",
-    "publis": "echo publis",
-	"postpublish": "echo postpublish",
-
-	"preinstall": "echo hooks preinstall",
-    "install": "echo hooks install",
-    "postinstall": "echo hooks postinstall",
-	
-	"prestart": "./scripts/prestart.js",
-    "start": "echo start",
-    "poststart": "echo poststart",
-	
-	"prestop": "echo prestop",
-    "stop": "echo stop",
-    "poststop": "echo poststop",
-	
-	"prerestart": "echo hooks preinstall",
-    "restart": "echo restart",
-    "postrestart": "echo postrestart",
-	
-	"precustom": "echo preCustom",
-    "custom": "echo custom",
-    "postcustom": "echo postcustom"
+    "preinstall": "echo ${npm_lifecycle_event}",
+    "install": "echo ${npm_lifecycle_event}",
+    "postinstall": "echo ${npm_lifecycle_event}",
+    "preuninstall": "echo ${npm_lifecycle_event}",
+    "uninstall": "echo ${npm_lifecycle_event}",
+    "postuninstall": "echo ${npm_lifecycle_event}",
+    "prepare": "echo ${npm_lifecycle_event}",
+    "prepublishOnly": "echo ${npm_lifecycle_event}",
+    "prepack": "echo ${npm_lifecycle_event}",
+    "postpack": "echo ${npm_lifecycle_event}",
+    "publish": "echo ${npm_lifecycle_event}",
+    "postpublish": "echo ${npm_lifecycle_event}",
+    "prestart": "./scripts/prestart.js",
+    "poststart": "echo ${npm_lifecycle_event}",
+    "prestop": "echo ${npm_lifecycle_event}",
+    "stop": "pkill -SIGINT myApp ",
+    "poststop": "echo ${npm_lifecycle_event}",
+    "prerestart": "echo ${npm_lifecycle_event}",
+    "restart": "echo ${npm_lifecycle_event}",
+    "postrestart": "echo ${npm_lifecycle_event}",
+    "preversion": "echo  ${npm_lifecycle_event}",
+    "version": "echo ${npm_lifecycle_event}",
+    "postversion": "echo ${npm_lifecycle_event} && npm publish",
+    "precustom": "echo ${npm_lifecycle_event}",
+    "custom": "echo ${npm_lifecycle_event}",
+    "postcustom": "echo ${npm_lifecycle_event}",
+    "env:npm": "env | grep npm_",
+    "hooks:clean": "npm un hello-world && rm -rf node_modules/.hooks",
+    "hooks:global": "cp -rf hooks node_modules/.hooks && npm i hello-world"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",
   "license": "ISC",
   "dependencies": {
-    "ha": "0.0.17"
+    "hello-world": "^1.0.1"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }

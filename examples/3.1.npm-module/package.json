@@ -4,9 +4,9 @@
   "description": "此示例说明 `exports` 和 `module.exports` 的区别",
   "main": "index.js",
   "scripts": {
-    "debug": "node inspect index.js"
+	"debug": "node inspect index.js"
   },
   "keywords": [],
-  "author": "chengle297 <chengle297@163.com>",
+  "author": "zenheart <zenheart_register@163.ocm>",
   "license": "ISC"
 }

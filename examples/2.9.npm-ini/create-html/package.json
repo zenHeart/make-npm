@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "chengle297 <chengle297@163.com>",
+  "author": "zenheart <zenheart_register@163.ocm>",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1"

@@ -8,7 +8,7 @@
     "clean": "rm -rf node_modules package-lock.json"
   },
   "keywords": [],
-  "author": "chengle297 <register@zenheart.site>",
+  "author": "zenheart <register@zenheart.site>",
   "license": "ISC",
   "dependencies": {
     "package1": "^3.0.0"

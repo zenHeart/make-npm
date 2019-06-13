@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+console.log('global hooks',process.env.npm_lifecycle_event);

@@ -1,0 +1,6 @@
+{
+	"name": "_echo",
+	"bin": {
+		"_echo": "index.js"
+	}
+}

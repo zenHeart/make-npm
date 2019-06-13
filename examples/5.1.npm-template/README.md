@@ -21,6 +21,7 @@
 * `CHANGELOG.md` 存放版本迭代信息
 * `TODO.md` 存放项目代办事项(可忽略)
 
+
 ## README 模板
 README.md 不同于 docs ,目的是为了让相关人员迅速理解项目并上手,
-一个典型 README 模板如下
+可参考此模板 [readme.template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)

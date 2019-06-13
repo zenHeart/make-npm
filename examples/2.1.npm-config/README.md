@@ -24,16 +24,16 @@
     ...
     user-agent = "npm/6.9.0 node/v10.15.3 darwin x64"
 
-    ; project config /Users/chengle297/code/work/make-ppt/examples/2.1.npm-config/.npmrc
+    ; project config /Users/zenheart/code/work/make-ppt/examples/2.1.npm-config/.npmrc
     arr = ["1","2"]
     foo = "bar"
     s = {"a":"1"}
 
-    ; userconfig /Users/chengle297/.npmrc
+    ; userconfig /Users/zenheart/.npmrc
     ...
     test_user_conf = "user"
 
-    ; globalconfig /Users/chengle297/.nvm/versions/node/v10.15.3/etc/npmrc
+    ; globalconfig /Users/zenheart/.nvm/versions/node/v10.15.3/etc/npmrc
     test_global_conf = "global"
 
     ; default values
@@ -59,7 +59,7 @@
 baz = "foo"
 foo = "overwrite"
 ...
-; project config /Users/chengle297/code/work/make-ppt/examples/2.1.npm-config/.npmrc
+; project config /Users/zenheart/code/work/make-ppt/examples/2.1.npm-config/.npmrc
 arr = ["1","2"]
 ; foo = "bar" (overridden)
 ```

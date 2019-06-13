@@ -5,3 +5,4 @@
 ☐ 补充 scope 包发布的讲解
 ☐ 在所有例子中添加 `private` 和 `publishConfig` 避免错误提交到 npm
 ☐ 在所有例子中添加 `private` 和 `publishConfig` 避免错误提交到 npm
+☐ 看完所有 [npm blogs](https://blog.npmjs.org/)

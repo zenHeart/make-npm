@@ -90,7 +90,7 @@ npm i
 
 典型的作用如下:
 1. 给某个依赖一个额外的下载选择,静默安装错误
-	> 例如在项目运行存在多个 `regsitry` 时,希望默认采用 npm 包,若 registry 环境切换,则使用新 registry 的同名包
+	> 例如在项目运行存在多个 `registry` 时,希望默认采用 npm 包,若 registry 环境切换,则使用新 registry 的同名包
 2. 当安装依赖不符合需求或加载有错误时,采用替代包避免错误,此示例来源于 [npm optional](https://docs.npmjs.com/files/package.json.html#optionaldependencies) 说明。你可以参看 [](./package-optionalDependencies/index.js) 进行理解
 
 

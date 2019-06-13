@@ -1,5 +1,5 @@
 {
-  "name": "1.1.npm-registry",
+  "name": "npm-registry",
   "version": "1.0.0",
   "description": "本地搭建一个 npm registry",
   "main": "index.js",

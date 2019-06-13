@@ -1,0 +1,23 @@
+{
+ "name": "npm-auto",
+ "version": "1.0.1",
+ "description": "## 如何实现 NPM 的自动化发布",
+ "main": "index.js",
+ "//":[
+	 "该示例说明如何组合利用 npm scripts,当运行  npm version patch 时触发,先触发测试",
+	 "测试执行完成触发发布流程",
+	 "发布成功触发仓库推送"
+ ],
+ "scripts": {
+  "test": "echo run test",
+  "preversion": "npm test",
+  "postversion": "npm publish --tag next",
+  "postpublish": "echo git push origin master"
+ },
+ "keywords": [],
+ "author": "zenheart <zenheart_register@163.com>",
+ "license": "ISC",
+ "publishConfig": {
+  "registry": "http://localhost:4873"
+ }
+}

@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "chengle297 <chengle297@pingan.com.cn>",
-  "license": "ISC"
+  "author": "zenheart <zenheart_register@163.com>",
+  "license": "ISC",
+  "publishConfig": {
+	  "registry":"http://localhost:4873"
+  }
 }

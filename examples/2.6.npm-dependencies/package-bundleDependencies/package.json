@@ -10,7 +10,7 @@
     "package1"
   ],
   "keywords": [],
-  "author": "chengle297 <register@zenheart.site>",
+  "author": "zenheart <register@zenheart.site>",
   "publishConfig": {
 	  "registry":"http://localhost:4873"
   },

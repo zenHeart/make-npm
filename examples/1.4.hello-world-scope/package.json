@@ -1,0 +1,17 @@
+{
+  "name": "@zenheart/hello-world",
+  "version": "1.0.6",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "npm publish --tag=next",
+    "preversion": "npm  test",
+    "test": "echo test"
+  },
+  "keywords": [],
+  "author": "zenheart-demo <register@zenheart.site>",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}

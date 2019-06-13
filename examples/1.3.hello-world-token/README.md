@@ -39,7 +39,4 @@ npm 存在 registry 分为用户版和企业版,此外按照包的访问权限�
 2. 在项目中集成 `npmrc` 配置文件，参考 <https://docs.npmjs.com/using-private-packages-in-a-ci-cd-workflow>
 3. `npm publish`
 
-> ci 发布的意义在于避免输入用户名和密码
-
-## scope 包的发布
-scope 包和普通包基本相同只是携带一个 `@<scope>` 的命名空间,i
+> 利用 token 机制避免 ci 发布时身份认证的问题

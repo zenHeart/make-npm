@@ -1,0 +1,15 @@
+{
+  "name": "local-use",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "link": "npm link ../package1",
+    "clean": "rm -rf node_modules",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "zenheart <zenheart_register@163.ocm>",
+  "license": "ISC",
+  "dependencies": {}
+}
