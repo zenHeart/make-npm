@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ppt": "webpack-dev-server --open --host 0.0.0.0",
-    "build": "webpack"
+	"ppt:build": "webpack",
+	"ppt:deploy":"./scripts/deploy.sh"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",

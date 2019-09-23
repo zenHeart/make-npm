@@ -4,19 +4,18 @@ const CleanWebpackPlugin = require ('clean-webpack-plugin');
 const ExtractTextPlugin = require ('extract-text-webpack-plugin');
 const CopyPlugin = require ('copy-webpack-plugin');
 const express = require ('express');
-const fs  = require('fs')
+const fs = require ('fs');
 
 /**
  * 获取所有 ppt 的文件名
  * 
  * @return 返回所有 ppt 文件名
  */
-function getPPTFiles(dirName) {
-    return fs.readdirSync(dirName).filter(ele => {
-        return ele.includes('.md')
-    })
+function getPPTFiles (dirName) {
+  return fs.readdirSync (dirName).filter (ele => {
+    return ele.includes ('.md');
+  });
 }
-
 
 module.exports = {
   mode: 'development',
@@ -25,13 +24,13 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin ([
-        {from: 'node_modules/reveal.js', to: 'reveal.js/'},
-        {from: 'ppt',to:'.'}
+      {from: 'node_modules/reveal.js', to: 'reveal.js/'},
+      {from: 'ppt', to: '.'},
     ]),
     new HtmlWebpackPlugin ({
       title: 'reveal-demo',
       template: 'template.pug',
-      sections: getPPTFiles('./ppt'), //配置 PPT 的读取目录
+      sections: getPPTFiles ('./ppt'), //配置 PPT 的读取目录
     }),
     new CleanWebpackPlugin (),
     new ExtractTextPlugin ('styles.css'),
@@ -39,7 +38,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
   },
   output: {
     filename: 'bundle.js',
@@ -90,4 +89,3 @@ module.exports = {
     ],
   },
 };
-
