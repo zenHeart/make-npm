@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ppt": "webpack-dev-server --open --host 0.0.0.0",
+    "ppt": "webpack-dev-server --open --host 0",
 	"ppt:build": "webpack",
 	"ppt:deploy":"./scripts/deploy.sh"
   },
