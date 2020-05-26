@@ -4,6 +4,7 @@
   "description": "本地搭建一个 npm registry",
   "main": "index.js",
   "scripts": {
+    "init":"npm i -g verdaccio",
     "registry": "verdaccio",
     "registry:reset":"rm -rf $HOME/.local/share/verdaccio/storage"
   },

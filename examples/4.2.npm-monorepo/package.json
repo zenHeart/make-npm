@@ -19,7 +19,7 @@
     "author": "zenheart <zenheart_register@163.com>",
     "license": "ISC",
     "dependencies": {
-        "lerna": "3.14.1"
+        "lerna": "3.20.2"
     },
     "devDependencies": {
         "debug": "^4.1.1"

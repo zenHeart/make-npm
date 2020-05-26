@@ -1,2 +1,2 @@
-lerna.json
-packages
+node_modules/
+packages/
