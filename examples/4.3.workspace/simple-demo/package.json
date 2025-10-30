@@ -1,0 +1,22 @@
+{
+  "name": "simple-demo",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "private": true,
+  "version": "1.0.0",
+  "description": "test workspace",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "//install": "install will auto link package",
+    "//add": "use -w filer workspace",
+    "add": "npm install abbrev -w package1",
+    "//multi": "-w package1 -w package2",
+    "multi": "npm run echo -w package1 -w package2",
+    "//all": "packages",
+    "all": "npm run echo --workspace=packages"
+  },
+  "author": "",
+  "license": "ISC"
+}

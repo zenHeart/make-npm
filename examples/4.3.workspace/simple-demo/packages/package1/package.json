@@ -1,0 +1,12 @@
+{
+  "name": "package1",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "abbrev": "^3.0.1",
+    "package3": "^0.0.1"
+  },
+  "scripts": {
+    "echo": "echo package1"
+  }
+}
