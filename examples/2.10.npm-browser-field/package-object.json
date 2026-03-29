@@ -1,0 +1,15 @@
+{
+  "name": "example-browser-object",
+  "version": "1.0.0",
+  "description": "browser 字段 - 对象格式示例（替换子模块）",
+  "main": "index.js",
+  "browser": {
+    "./server.js": "./server.browser.js",
+    "./native.js": false,
+    "./polyfill.js": "./polyfill.browser.js"
+  },
+  "files": [
+    "*.js",
+    "dist/"
+  ]
+}
