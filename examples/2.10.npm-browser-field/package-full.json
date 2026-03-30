@@ -1,0 +1,25 @@
+{
+  "name": "example-browser-full",
+  "version": "1.0.0",
+  "description": "browser 字段 - 完整配置示例（配合 main/exports/module）",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "browser": "./dist/browser/index.js"
+    },
+    "./server": {
+      "require": "./dist/server.cjs.js",
+      "browser": "./dist/server.browser.js"
+    }
+  },
+  "browser": {
+    "module": "dist/index.esm.browser.js",
+    "default": "dist/index.umd.js"
+  },
+  "files": [
+    "dist/"
+  ]
+}

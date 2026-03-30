@@ -1,0 +1,10 @@
+{
+  "name": "demo-with-browser",
+  "version": "1.0.0",
+  "description": "带有 browser 字段的示例包",
+  "main": "src/index.js",
+  "browser": "src/browser-entry.js",
+  "scripts": {
+    "bundle": "echo 'Browser field will be used by bundler'"
+  }
+}
