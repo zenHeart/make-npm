@@ -1,0 +1,9 @@
+{
+  "name": "demo-without-browser",
+  "version": "1.0.0",
+  "description": "没有 browser 字段的示例包",
+  "main": "src/index.js",
+  "scripts": {
+    "bundle": "echo 'No browser field, will use main field'"
+  }
+}
