@@ -4,32 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ppt": "webpack-dev-server --open --host 0",
-	"ppt:build": "webpack",
-	"ppt:deploy":"./scripts/deploy.sh"
+    "ppt": "webpack serve --open --host 0.0.0.0",
+    "ppt:build": "webpack --mode production",
+    "ppt:deploy": "./scripts/deploy.sh",
+    "ppt:test": "npm run ppt:build && node scripts/check-ppt.cjs"
   },
   "keywords": [],
   "author": "zenheart <zenheart_register@163.com>",
   "license": "ISC",
   "devDependencies": {
-    "clean-webpack-plugin": "^2.0.1",
-    "copy-webpack-plugin": "5.0.2",
-    "css-loader": "^2.1.1",
-    "expose-loader": "^0.7.5",
-    "extract-text-webpack-plugin": "4.0.0-beta.0",
-    "file-loader": "3.0.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "pug": "^2.0.3",
+    "copy-webpack-plugin": "12.0.2",
+    "html-webpack-plugin": "5.6.6",
+    "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "reveal.js": "4.3.0",
-    "style-loader": "^0.23.1",
-    "webpack": "5.94.0",
-    "webpack-cli": "3.3.1",
-    "webpack-dev-server": "3.3.1"
+    "webpack": "5.112.2",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.2.6"
   },
   "dependencies": {
-    "package1": "file:examples/2.1npm-install/package1",
     "verdaccio": "4.0.0"
+  },
+  "engines": {
+    "node": ">=18.12.0"
   }
 }

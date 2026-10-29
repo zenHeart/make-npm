@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-CN")
     head
         title=htmlWebpackPlugin.options.title
         meta(
@@ -17,18 +17,18 @@ html(lang="en")
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         )
-        link(rel='stylesheet', href='reveal.js/css/reveal.css')
-        link(rel='stylesheet', href='reveal.js/css/print/paper.css')
-        script(src='reveal.js/js/reveal.js')
+        link(rel='stylesheet', href='reveal.js/dist/reveal.css')
+        link(rel='stylesheet', href='reveal.js/dist/theme/moon.css')
+        link(rel='stylesheet', href='reveal.js/plugin/highlight/monokai.css')
     body
         div.reveal
             //- 添加新的章节,详细配置参见 https://www.npmjs.com/package/reveal.js#markdown
-            each section in htmlWebpackPlugin.options.sections
-                div.slides
+            div.slides
+                each section in htmlWebpackPlugin.options.sections
                     section(
                     data-markdown=section
-                    data-separator="^\r?\n---\r?\n$"
-                    data-separator-vertical="^\n\n"
+                    data-separator="^\\r?\\n---\\r?\\n$"
+                    data-separator-vertical="^\\r?\\n\\r?\\n"
                     data-separator-notes="^> note:"
                     data-charset="utf-8")
     
