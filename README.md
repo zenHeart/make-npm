@@ -13,6 +13,9 @@
 
 项目演示 PPT 采用 [reveal.js](https://www.npmjs.com/package/reveal.js) 使用 webpack 进行编译.
 
+构建环境需要 Node.js 18.12 或更高版本，首次运行先执行 `npm install`。
+主题样式在 `template.pug` 中配置，演示插件在 `index.js` 中注册。
+
 常用命令如下
 
 ```bash
@@ -20,6 +23,8 @@
 npm run ppt
 # 本地编译
 npm run ppt:build
+# 校验章节、静态资源和开发服务
+npm run ppt:test
 # 部署编译结果到 github pages
 npm run ppt:deploy
 ```
